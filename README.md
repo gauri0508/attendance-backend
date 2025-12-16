@@ -111,7 +111,10 @@ Run the schema script using the NeonDB SQL Editor:
 -- Execute in order
 sql/schema.sql
 ```
+### Database Schema
 
+![Database Schema](screenshots/schema.png)
+*Entity-Relationship diagram showing tables, relationships, and constraints*
 ---
 
 ## 🔄 ETL Pipeline (Batch Ingestion)
@@ -132,6 +135,9 @@ python etl/etl.py
 - Error logging without pipeline failure
 - Idempotent execution
 
+### ETL Output
+
+![ETL Pipeline Output](screenshots/etl.png)
 ---
 
 ## 🔁 Real-Time Ingestion (Google Apps Script)
@@ -150,6 +156,10 @@ Google Sheets acts as a frontend for real-time data entry.
 - 🔴 Red: Invalid data or API error
 - 🟢 Green: Successfully inserted into database
 
+### Google Sheets Demo
+
+![Red Entry - Invalid Data | Green Entry - Success](screenshots/google_sheet_entry.png)
+
 ---
 
 ## 🔍 SQL Development & Optimization
@@ -163,6 +173,13 @@ The project includes:
 - Stored functions for parameterized reports
 - Query optimization using indexes and EXPLAIN ANALYZE
 
+### SQL Query Examples
+
+![SQL Query 1](screenshots/sql_query.png)
+
+![SQL Query 2](screenshots/sql_query_2.png)
+
+![SQL Query 3](screenshots/sql_query-3.png)
 ---
 
 ## 🧪 Verification
@@ -219,3 +236,4 @@ System correctness was verified through:
 ## 👤 Author
 
 **Gauri Shukla**
+
